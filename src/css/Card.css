@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 2rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    text-align:center;
+    color:#023480;
+    margin-bottom: 1.5rem;
+}
+/*Title*/
+h2{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    text-align:left;
+}
+/*Date*/
+h3{
+    font-size: 00.8rem;
+    font-weight: lighter;
+}
+
+/*Info*/
+p{
+    font-size: 0.7rem;
+    font-family: 'Rubik', sans-serif;
+    text-align:justify;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem, 16rem));
+    gap:4rem;
+    justify-content: center;
+}
+
+.card{
+    overflow: hidden;
+    box-shadow:0 2px 20px #eef1f6;
+    border-radius: 0.5rem;
+    display: flex;
+    background:#f3f3f3;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 200ms ease-in;
+    
+}
+
+.image{
+    height: 12rem;
+    width: 100%;
+    object-fit:cover;
+}
+
+.cardTitle{
+    padding: 1rem;
+
+}
+.cardInfo{
+    padding: 1rem;
+}
+
+.cardButton{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #023480;
+    border: transparent;
+    background: #fbfbfb;
+    color:#023480;
+    border-radius: 0.2rem;
+    cursor:pointer;
+    transition: background 200ms ease-in,color 200ms ease-in;
+
+}
+
+.cardButton:hover{
+    transform: scale(1.02);
+    background:  #023480;
+    color: white;
+}
+.card:hover{
+    transform: scale(1.03);
+
+}
